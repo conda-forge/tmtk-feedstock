@@ -1,6 +1,6 @@
 {% set name = "tmtk" %}
-{% set version = "0.4.4.dev4" %}
-{% set sha256 = "4bfa2e508d3c6dba8e07d245767a165d6f36a0d91940b1ab170c272f05dbd8ae" %}
+{% set version = "0.4.4" %}
+{% set sha256 = "dab12a331065974ad743031ffd106e1619cf603864029470f0692d52329a97af" %}
 
 package:
   name: {{ name|lower }}
