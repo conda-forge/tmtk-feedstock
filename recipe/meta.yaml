@@ -1,6 +1,6 @@
 {% set name = "tmtk" %}
-{% set version = "0.5.7" %}
-{% set sha256 = "1241cabb8f9828f572f3e900f923fcc682a1afdf2f1afb780d4aa4c5454f785e" %}
+{% set version = "0.5.8" %}
+{% set sha256 = "824bf104fb2026b54b528ca75ce014369e1e45caef0e1bb9fdfd3e88e1ed691e" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [py<34]
+  skip: true  # [py<34]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - transmart-batch = tmtk.utils.batch.__main__:run_batch
@@ -56,7 +56,7 @@ about:
   license: LGPL-3.0
   license_family: GPL
   license_file: LICENSE.txt
-  summary: 'A toolkit for ETL curation for the tranSMART data warehouse.'
+  summary: A toolkit for ETL curation for the tranSMART data warehouse.
 
   doc_url: https://tmtk.readthedocs.io/
   dev_url: https://github.com/thehyve/tmtk
