@@ -19,7 +19,7 @@ build:
     - transmart-batch = tmtk.utils.batch.__main__:run_batch
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - numpy 1.11.*
